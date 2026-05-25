@@ -191,6 +191,10 @@
           box-shadow 0.15s ease;
       }
 
+      .btn {
+        touch-action: manipulation;
+      }
+
       .btn-yes {
         background: var(--pink);
         color: #fff;
@@ -281,10 +285,11 @@
           <button
             class="btn btn-no"
             id="noBtn"
-            onmouseenter="escapeNo(event)"
-            onclick="escapeNo(event)"
+            onmouseenter="escapeNo()"
+            onclick="escapeNo()"
+            ontouchstart="escapeNo()"
           >
-            nie... 🐻
+            no... 🐻
           </button>
         </div>
       </div>
